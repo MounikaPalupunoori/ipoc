@@ -1,0 +1,46 @@
+.mainDropdownContainer {
+    box-sizing: content-box;
+    width: max-content;
+    padding: 0 0 0 0;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
+:global(.mainDropdownContainer li) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    list-style: none;
+}
+
+:global(.mainDropdownContainer li:hover) {
+    background-color: rgb(232, 232, 232);
+}
+
+:global(.hoverOption) {
+    position: relative;
+}
+
+:global(.hoverUL) {
+    background-color: #ffffff;
+    width: max-content;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+:global(.hoverOption > ul) {
+    display: none;
+}
+
+:global(.hoverOption:hover > ul) {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    display: block;
+    padding: 0;
+}

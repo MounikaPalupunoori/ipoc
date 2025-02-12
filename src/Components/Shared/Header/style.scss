@@ -1,0 +1,119 @@
+//colors
+$color_icore: #fff;
+$color_icore_text: #ac1b35;
+$color_icore_drop_text: rgba(34,36,38,.15);
+$color_icore_drop_bg_item:rgba(242, 242, 242,1);
+$navbar_color:rgba(0,123,255,1);
+//fonts
+$icore_font: FuturaPT-Bold;
+
+.navbar {
+	height: 3.5em;
+	background-color: $navbar_color;
+}
+.navbar-brand {
+	font-size: 2.25em;
+}
+.icore {
+	display: flex;
+	align-items: center;
+	// font-family: $icore_font;
+	font-weight: 400;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.35;
+	letter-spacing: normal;
+	text-align: left;
+	color: $color_icore;
+	.text-style-1 {
+		font-family: $icore_font;
+		color: $color_icore_text;
+	}
+}
+
+.listMenu {
+	visibility: hidden;
+	animation: fade_in_show 0.5s;
+}
+.nav_hover:hover>.listMenu{
+	visibility: visible;
+}
+@keyframes fade_in_show {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+.nav-link {
+	line-height: 3;
+	padding: 0;
+}
+.dropdown-menu {
+	left: 0px;
+    right: 1px;
+    height: fit-content;
+	top: 95%;
+	display: block;
+	min-width: 8rem;
+	padding: 0;
+	border: 1px solid $color_icore_drop_text;
+}
+.dropdown-item {
+	color: rgba(0,0,0,75%);
+	display: flex;
+	font-size: 0.9rem;
+	align-items: center;
+	padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 16px;
+    padding-right: 16px;
+	width: 122px;
+    height: 36px;
+	&:hover {
+		color: var(--black);
+		background:$color_icore_drop_bg_item;
+		border-radius: inherit;
+		width: 100%;
+	}
+}
+.navbar-light .navbar-nav .nav-link
+.navbar-light .navbar-nav .nav-link {
+	// color: rgba(0,0,0,75%);
+	color:$color_icore;
+}
+.nav-item > a > span {
+	font-size: 14px;
+	margin-left: 5px;
+	color:$color_icore;
+}
+.itemCursor, [role=sidebaricon]{
+	cursor: pointer;
+}
+
+i.black.icon.usernameText{
+  color:$color_icore !important;
+}
+
+.fixMargin {
+  margin: 0 0 0 0.3em !important;
+}
+.logo-container {
+  display: flex;
+}
+
+.logo {
+	content: url("/ipoc/static/images/onco_indx.png");
+  height: 1em;
+}
+.icare-logo-txt {
+  color: $color_icore;
+  font-size: 1em;
+  // margin: 0 0.2em;
+}
+.navbar-light .navbar-nav .nav-link{
+	color:$color_icore !important;
+}

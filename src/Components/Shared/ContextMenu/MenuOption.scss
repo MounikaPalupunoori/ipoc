@@ -1,0 +1,38 @@
+//colors
+$color_boder:rgba(210, 210, 210, 0.5);
+$colorbg_hover:#0002;
+$color_disabled: #0006;
+
+.menu_option {
+  padding-left: 12px;
+  cursor: default;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  grid-gap: 12px;
+  line-height: 2.5;
+
+  /* border-bottom: 1px solid rgb(210 210 210 / 0.5); */
+  &:first-child {
+    border-bottom: 1px solid $color_boder;
+  }
+
+  &:nth-last-child(2) {
+    border-top: 1px solid $color_boder;
+    ;
+  }
+
+  &:hover {
+    background: $colorbg_hover;
+    cursor: pointer;
+  }
+
+  &.disabled {
+    color: $color_disabled;
+
+    &:hover {
+      background: white;
+      cursor: no-drop;
+    }
+  }
+}

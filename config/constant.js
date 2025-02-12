@@ -1,0 +1,12 @@
+const ICORE_CONFIG = {
+  study_id: '3',
+  subject_id: '',
+  // base_url: 'https://icorev5-dev.indx.ai:3000',
+  base_url: 'https://icorev5-dev.indx.ai:3000',
+  base_url_gql: 'https://icorev5-dev.indx.ai:3300',
+  username: 'researcher@indxtechnology.com',
+  password: 'Res@123',
+  token:
+    'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2ljb3JldjUtZGV2LmluZHguYWk6MzAwMCIsInN1YiI6IjEiLCJ1c2VybmFtZSI6ImFkbWluQGluZHh0ZWNobm9sb2d5LmNvbSIsInJvbGVfaWQiOiIxIiwic2NvcGUiOiIiLCJleHAiOjE2MDY2NDk5NzAsImlhdCI6MTYwNjQ3NzE3MH0.WdoDvqGnPBO7JqRTY27g2Lp6isamMMW65J8hnbVpI3rG13wNHE8aq8k0g33StCvAPNXaKd_pvGyBfZ9Uwqz68BMc-ydzOSIn5j1kXbaEPYe0i-35OZqBlhL2t9TnJtOhs1raVtnWqO7C9ApFvUAaIMsTOr_18e0gS284x1YZQMI0YHYbTT6nF62nmwkSQm90TJlM9KNZi34WvbZ7GLlsPrSuKksB7bWIFdFEXFD1Lzw8mw9i9DAuJ_YTOE2GcnCVvHakhgkc5YHjv8tsrTqIrZRUyuixpE9AyFbqVxmPiXlGuEi3qAk_RUdh6vM3TvKnSFcQ4GszI7XmHMMIq2n5w6PCa0GHiOEm5lQp46cRaMpZIymsJcxCigH62S43wXtsyAe05zFyuPeewf2fsP5hMKiIZnSMMa-CVZBPK7vQgLLy4UdbeExL9T8UAnZCq1JPOZVxoehwW5qeEx0evMlxpuzbrlRey1MRyODHzRENMjsQrTUmwtspqeiQPPv4Zn0lewcxQw6980B-qU3jlvi5oMmUgM7vqWThfzuIm2GvlPSwKHzCccI1t6n2Cyl2jNO0EZA3X79t8rxmq7ClGw11Z-oZ5JVWzugY8o-tUcts6B9PzAtQ8ElNxm73-HcSMZVuMZxKqAM9EWdXqtsB6e9eVzYysHKKf9uwg4aF8BERZ7c',
+};
+export default ICORE_CONFIG;

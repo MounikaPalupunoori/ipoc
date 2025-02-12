@@ -1,0 +1,36 @@
+//colors
+$color_sidebar: rgba(0, 0, 0, 0.1);
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	padding: 48px 0 0;
+	border-top: none;
+	border-left: 0px;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: inset -1px 0 0 $color_sidebar;
+}
+
+@media(max-width: 767.98px) {
+	.sidebar {
+		top: 5rem;
+	}
+}
+
+.sidebar-sticky {
+	position: relative;
+	top: 0;
+	height: calc(100vh - 4em);
+	padding-top: 0.5rem;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+@supports((position: -webkit-sticky) or(position: sticky)) {
+	.sidebar-sticky {
+		position: sticky;
+	}
+}

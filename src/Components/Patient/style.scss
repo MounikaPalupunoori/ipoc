@@ -1,0 +1,59 @@
+.redirect-button {
+  float: right;
+}
+.loader_container{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  min-height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  min-width: 80vw;
+  align-items: center;
+}
+.redirect-button {
+  float: right;
+}
+.loader_container{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  min-height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  min-width: 80vw;
+  align-items: center;
+}
+:global(legend){
+  width: auto;
+  font-size: 1.24rem;
+  padding:0 5px;
+}
+:global(fieldset){
+  border-radius: 5px;
+  display: block;
+  margin-inline-start: 1px;
+  margin-inline-end: 1px;
+  padding-block-start: 0.35em;
+  padding-inline-start: 0.75em;
+  padding-inline-end: 0.75em;
+  padding-block-end: 0.625em;
+  min-inline-size: min-content;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.125);
+  border-image: initial;
+}
+:root {
+  --toastContainerTop: 4.5em;
+  --toastContainerRight: calc(50vw - 20rem);;
+  --toastContainerBottom: auto;
+  --toastContainerLeft: calc(50vw - 20rem);
+  --toastWidth: 100%;
+  --toastMinHeight: 2rem;
+  --toastPadding: 0 0.5rem;
+}

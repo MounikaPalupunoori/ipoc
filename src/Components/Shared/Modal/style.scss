@@ -1,0 +1,25 @@
+h4 {
+  font-size: 1rem;
+  text-align: left;
+}
+
+//   .buttons {
+//     float: right;
+//     margin: 25px 3px; 
+//   }
+.c-btn {
+  padding: 0.25em 2.25em;
+  border-radius: 4px;
+  display: inline-block;
+  text-align: right;
+}
+.close {
+  position: absolute;
+  top: -2rem;
+  right: 0;
+  background: black;
+  border-radius: 0px
+}
+.content {
+  padding: 0px;
+}

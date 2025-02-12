@@ -1,0 +1,40 @@
+//colors
+$color_bg:rgba(96, 96, 96, 1);
+$color_text: #fff;
+$color_border:grey;
+//font
+$font_tooltip:sans-serif;
+
+.tooltip-box {
+  display: inline-block;
+  position: relative;
+
+  &:hover {
+    >.tooltip-wrapper {
+      opacity: 1;
+      display: block;
+    }
+  }
+
+  .tooltip-wrapper {
+    display: none;
+    width: max-content;
+    position: absolute;
+    height: fit-content;
+    font-size: 12px;
+    font-family: $font_tooltip;
+    background: $color_bg;
+    color: $color_text;
+    transition: opacity 0.5s;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 3px;
+    border-color: $color_border;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+    // bottom: -30px;
+    // left: -20px;
+    z-index: 4;
+  }
+}

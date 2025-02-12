@@ -1,0 +1,12 @@
+.menu_container {
+  background-color: #ffffff;
+  position: absolute;
+  width: 150px;
+  z-index: 4;
+  /* border: 1px solid rgba(232, 232, 232, 1); */
+  border-radius: 0;
+  overflow: hidden;
+  height: fit-content;
+  color: rgb(96, 96, 96);
+  box-shadow: -3px 5px 5px 0 rgba(0, 0, 0, 0.02), 2px 3px 14px 0 rgba(0, 0, 0, 0.12), 1px 8px 10px 0 rgba(0, 0, 0, 0.14);
+}

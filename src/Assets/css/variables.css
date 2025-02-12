@@ -1,0 +1,10 @@
+:root {
+  --brand-blue: rgb(2, 32, 92);
+  --brand-red: rgb(172, 27, 53);
+  --white: rgba(255,255,255);
+  --d-color:rgb(113, 113, 113);
+  --black:rgba(0,0,0);
+  --border-light-color: rgba(var(--black) / 25%);
+  --d-font:1rem;
+  /*font size*/
+}

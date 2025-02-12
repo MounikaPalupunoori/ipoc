@@ -1,0 +1,67 @@
+//color
+$color_text:#333333;
+//fonts
+$font_text:Open Sans;
+$font_text_altr:sans-serif;
+
+//mixins
+@mixin breadcrumb_font {
+  font-family: $font_text, $font_text_altr;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.breadcrumb {
+  padding: 0;
+  background-color: transparent;
+
+  .breadcrumb-item {
+    display: inline-block;
+
+    &:before {
+      content: '';
+      margin: 0;
+      padding: 0;
+    }
+
+    &:not(:last-of-type)::after {
+      content: '\203a';
+      margin: 0 2px;
+      color: $color_text;
+    }
+
+    &:not(:last-of-type) {
+      &::after {
+        content: '\203a';
+        margin: 0 2px;
+        color: $color_text;
+      }
+
+      >.breadcrumb-link {
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+
+    a.breadcrumb-link {
+      text-decoration: none;
+      @include breadcrumb_font;
+      color: $color_text;
+    }
+  }
+
+  .active {
+    a.breadcrumb-link {
+      height: 24px;
+      margin: 4px 2px 12px 0;
+      @include breadcrumb_font;
+      color: rgba($color_text, 0.7)
+    }
+  }
+}
